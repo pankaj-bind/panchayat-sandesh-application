@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Panchayat Sandesh</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account? </string>
+    <string name="sign_up"> Sign up</string>
 </resources>
