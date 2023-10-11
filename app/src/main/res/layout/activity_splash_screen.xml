@@ -15,5 +15,6 @@
       android:layout_height="200dp"
       app:srcCompat="@drawable/logo"
       tools:layout_editor_absoluteX="28dp"
-      tools:layout_editor_absoluteY="188dp" />
+      tools:layout_editor_absoluteY="188dp"
+      android:contentDescription="@string/splashlogo" />
 </LinearLayout>
