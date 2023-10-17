@@ -29,19 +29,6 @@
             android:textColor="@color/purple"
             tools:layout_editor_absoluteX="101dp"
             tools:layout_editor_absoluteY="164dp" />
-        <EditText
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Full Name"
-            android:drawableLeft="@drawable/email"
-            android:drawablePadding="8dp"
-            android:textStyle="bold"
-            android:paddingLeft="10dp"
-            android:background="@drawable/edittextbox"
-            android:autofillHints="emailAddress"
-            android:inputType="textEmailAddress"
-            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:layout_marginTop="20dp"
@@ -127,3 +114,4 @@
             android:textColor="@color/purple"
             android:text="Login"/>
     </LinearLayout>
+</LinearLayout>

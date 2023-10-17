@@ -8,4 +8,18 @@
     <string name="sign_up"> Sign up</string>
     <string name="splashlogo">splashLogo</string>
     <string name="forget_password">Forget Password?</string>
+
+
+
+    <string-array name="District">
+        <Item>Choose Your District</Item>
+        <Item>Prayagraj</Item>
+        <item>Bhadohi</item>
+    </string-array>
+
+    <string-array name="village">
+        <Item>Choose Your Village</Item>
+        <item>Mishree</item>
+        <item>Tulapur</item>
+    </string-array>
 </resources>

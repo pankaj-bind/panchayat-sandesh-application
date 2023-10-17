@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
+
     android:orientation="vertical"
     tools:context=".ChooseAccountType">
 <ImageButton
@@ -24,7 +25,7 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center|top">
         <LinearLayout
@@ -43,12 +44,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textStyle="bold"
                 android:text="Citizen"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="40dp"
             android:background="@drawable/userselectimage"
             android:orientation="vertical">
             <ImageView
@@ -62,8 +64,77 @@
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Official"/>
         </LinearLayout>
-
     </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Enter secret key if you are offical"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="Enter Secret Key"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittextbox"
+        android:autofillHints="emailAddress"
+        android:inputType="number"
+        tools:ignore="RtlSymmetry" />
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/edittextbox"
+        android:entries="@array/District"/>
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/edittextbox"
+        android:entries="@array/village"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="Enter Your Pincode"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittextbox"
+        android:autofillHints="emailAddress"
+        android:inputType="number"
+        tools:ignore="RtlSymmetry" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:textSize="19sp"
+        android:paddingLeft="23dp"
+        android:background="@drawable/loginbtn"
+        tools:ignore="RtlSymmetry"
+        />
+
 </LinearLayout>
