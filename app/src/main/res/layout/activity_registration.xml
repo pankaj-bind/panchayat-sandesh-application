@@ -11,7 +11,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/arrow_back"
-        android:background="@drawable/arrowback"/>
+        android:background="@drawable/arrowback"
+        android:contentDescription="@string/todo" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +24,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi,\nSign Up Now"
+            android:text="@string/hi_nsign_up_now"
             android:textStyle="bold"
             android:textSize="40sp"
             android:textColor="@color/purple"
@@ -54,11 +55,12 @@
             android:paddingLeft="10dp"
             android:background="@drawable/edittextbox"
             android:autofillHints="password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Must be atleast 8 character"
+            android:text="@string/must_be_atleast_8_character"
             android:textStyle="bold"
             android:textColor="@color/grey"/>
         <EditText
@@ -68,15 +70,16 @@
             android:drawableLeft="@drawable/lock"
             android:drawablePadding="8dp"
             android:textStyle="bold"
-            android:hint="Repeat Password"
+            android:hint="@string/repeat_password"
             android:paddingLeft="10dp"
             android:background="@drawable/edittextbox"
             android:autofillHints="password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Both password must match"
+            android:text="@string/both_password_must_match"
             android:textStyle="bold"
             android:textColor="@color/grey"/>
 
@@ -86,7 +89,7 @@
             android:layout_gravity="end"
             android:textStyle="bold"
             android:layout_height="50dp"
-            android:text="Next"
+            android:text="@string/next"
             android:textSize="19sp"
             android:paddingLeft="23dp"
             android:background="@drawable/loginbtn"
@@ -104,7 +107,7 @@
             android:layout_gravity="center"
             android:textColor="@color/grey"
             android:textSize="15sp"
-            android:text="If you are olden,"/>
+            android:text="@string/if_you_are_olden"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,6 +115,6 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/purple"
-            android:text="Login"/>
+            android:text="@string/login"/>
     </LinearLayout>
 </LinearLayout>

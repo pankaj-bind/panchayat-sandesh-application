@@ -12,12 +12,13 @@
     android:layout_width="40dp"
     android:layout_height="40dp"
     android:src="@drawable/arrow_back"
-    android:background="@drawable/arrowback"/>
+    android:background="@drawable/arrowback"
+    android:contentDescription="@string/backbutton" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Choose Account Type"
+            android:text="@string/choose_account_type"
             android:textSize="25sp"
             android:textColor="@color/purple"
             android:layout_marginBottom="20dp"
@@ -36,56 +37,58 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:padding="20dp"
-                android:src="@drawable/citizen" />
+                android:src="@drawable/citizen"
+                android:contentDescription="@string/citizenicon" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:text="Citizen"/>
+                android:text="@string/citizen"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="@drawable/userselectimage"
             android:orientation="vertical">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:padding="20dp"
-                android:src="@drawable/citizen" />
+                android:src="@drawable/citizen"
+                android:contentDescription="@string/citizenicon" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="Official"/>
+                android:text="@string/official"/>
         </LinearLayout>
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
-        android:text="Enter secret key if you are offical"/>
+        android:text="@string/enter_secret_key_if_you_are_offical"/>
     <EditText
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="9dp"
         android:layout_marginRight="9dp"
-        android:hint="Enter Secret Key"
-        android:drawableLeft="@drawable/secretkey"
+        android:hint="@string/enter_secret_key"
+        android:drawableStart="@drawable/secretkey"
         android:drawablePadding="8dp"
         android:textStyle="bold"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/edittextbox"
         android:autofillHints="emailAddress"
         android:inputType="number"
@@ -113,11 +116,11 @@
         android:layout_height="50dp"
         android:layout_marginLeft="9dp"
         android:layout_marginRight="9dp"
-        android:hint="Enter Your Pincode"
-        android:drawableLeft="@drawable/pincode"
+        android:hint="@string/enter_your_pincode"
+        android:drawableStart="@drawable/pincode"
         android:drawablePadding="8dp"
         android:textStyle="bold"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/edittextbox"
         android:autofillHints="emailAddress"
         android:inputType="number"
@@ -130,9 +133,9 @@
         android:layout_marginRight="9dp"
         android:textStyle="bold"
         android:layout_height="50dp"
-        android:text="Next"
+        android:text="@string/next"
         android:textSize="19sp"
-        android:paddingLeft="23dp"
+        android:paddingStart="23dp"
         android:background="@drawable/loginbtn"
         tools:ignore="RtlSymmetry"
         />
