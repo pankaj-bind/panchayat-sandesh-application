@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942102497416",
+    "project_id": "panchayat-sandesh",
+    "storage_bucket": "panchayat-sandesh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942102497416:android:add1d50fae225e95d0b73d",
+        "android_client_info": {
+          "package_name": "com.example.panchayatsandesh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxUmew7RWCzNSJLRvPwOrMKhA_T1rUi-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

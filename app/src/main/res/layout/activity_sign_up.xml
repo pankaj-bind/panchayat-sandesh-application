@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingStart="15dp"
+    android:paddingRight="15dp"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/whitetext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:padding="10dp"
+        android:background="@drawable/wrapper"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/userimage"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_width="80dp"
+                android:layout_height="73dp"
+                android:src="@drawable/userimg"/>
+            <!-- Full name -->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Full name"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="307dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:background="@drawable/inputtext" />
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/inputtext" />
+
+            <!-- Phone No. -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No."
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:background="@drawable/inputtext" />
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Password"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/inputtext" />
+            <!-- aadhar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhar No."
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aadhar"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:background="@drawable/inputtext" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="submit"
+        android:background="@drawable/button"
+        android:text="Submit" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Already have an account? "/>
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#07AA83"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="SIGN IN"/>
+    </LinearLayout>
+</LinearLayout>

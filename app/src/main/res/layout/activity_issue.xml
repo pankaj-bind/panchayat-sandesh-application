@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9DD9C3"
+    android:orientation="vertical"
+    tools:context=".IssueActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#07AA83"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:onClick="backToHome"
+            android:src="@drawable/leftarrow"
+            android:background="#07AA83"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="38dp"
+            android:text="Contact Us"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="dialButton"
+        android:layout_width="307dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/moreupdate"
+        android:text="Call Us" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="emailButton"
+        android:layout_width="307dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/moreupdate"
+
+        android:text="Email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="whatsappButton"
+        android:layout_width="307dp"
+        android:layout_height="57dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/moreupdate"
+        android:text="WhatsApp" />
+
+</LinearLayout>
